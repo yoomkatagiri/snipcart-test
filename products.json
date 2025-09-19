@@ -1,0 +1,15 @@
+[
+    {
+      "id": "test-1",
+      "name": "テスト商品A",
+      "url": "/products/test-1",
+      "price": 1000.0
+    },
+    {
+      "id": "test-2",
+      "name": "テスト商品B",
+      "url": "/products/test-2",
+      "price": 2000.0
+    }
+  ]
+  
