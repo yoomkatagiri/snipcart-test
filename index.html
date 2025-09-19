@@ -3,242 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Snipcart テスト購入</title>
-  <!-- Snipcart JS & CSS -->
+  <!-- Snipcart CSS & JS -->
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
   <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
-  <style>
-    body { font-family: sans-serif; padding: 20px; }
-    .product { margin-bottom: 10px; }
-  </style>
 </head>
 <body>
-  <h1>Snipcart テスト購入ページ</h1>
+  <h1>テスト購入ページ</h1>
 
-  <!-- 22商品ボタン -->
-  <div class="products">
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-1"
-              data-item-name="テスト商品A"
-              data-item-price="1000"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Aです">
-        商品Aをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-2"
-              data-item-name="テスト商品B"
-              data-item-price="2000"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Bです">
-        商品Bをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-3"
-              data-item-name="テスト商品C"
-              data-item-price="1500"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Cです">
-        商品Cをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-4"
-              data-item-name="テスト商品D"
-              data-item-price="1200"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Dです">
-        商品Dをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-5"
-              data-item-name="テスト商品E"
-              data-item-price="800"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Eです">
-        商品Eをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-6"
-              data-item-name="テスト商品F"
-              data-item-price="2200"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Fです">
-        商品Fをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-7"
-              data-item-name="テスト商品G"
-              data-item-price="900"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Gです">
-        商品Gをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-8"
-              data-item-name="テスト商品H"
-              data-item-price="1800"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Hです">
-        商品Hをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-9"
-              data-item-name="テスト商品I"
-              data-item-price="1300"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Iです">
-        商品Iをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-10"
-              data-item-name="テスト商品J"
-              data-item-price="1600"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Jです">
-        商品Jをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-11"
-              data-item-name="テスト商品K"
-              data-item-price="1100"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Kです">
-        商品Kをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-12"
-              data-item-name="テスト商品L"
-              data-item-price="2100"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Lです">
-        商品Lをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-13"
-              data-item-name="テスト商品M"
-              data-item-price="950"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Mです">
-        商品Mをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-14"
-              data-item-name="テスト商品N"
-              data-item-price="1750"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Nです">
-        商品Nをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-15"
-              data-item-name="テスト商品O"
-              data-item-price="1400"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Oです">
-        商品Oをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-16"
-              data-item-name="テスト商品P"
-              data-item-price="2000"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Pです">
-        商品Pをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-17"
-              data-item-name="テスト商品Q"
-              data-item-price="1250"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Qです">
-        商品Qをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-18"
-              data-item-name="テスト商品R"
-              data-item-price="1950"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Rです">
-        商品Rをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-19"
-              data-item-name="テスト商品S"
-              data-item-price="1100"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Sです">
-        商品Sをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-20"
-              data-item-name="テスト商品T"
-              data-item-price="2300"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Tです">
-        商品Tをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-21"
-              data-item-name="テスト商品U"
-              data-item-price="1700"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Uです">
-        商品Uをカートに入れる
-      </button>
-    </div>
-    <div class="product">
-      <button class="snipcart-add-item"
-              data-item-id="test-22"
-              data-item-name="テスト商品V"
-              data-item-price="1900"
-              data-item-url="https://yoomkatagiri.github.io/snipcart-test/products.json"
-              data-item-description="テスト商品Vです">
-        商品Vをカートに入れる
-      </button>
-    </div>
-  </div>
+  <!-- 商品ボタンをJSONから自動生成 -->
+  <div id="products-container"></div>
 
   <!-- Snipcart 本体 -->
   <div hidden id="snipcart" data-api-key="NzU0OTljZjgtNjM3My00ODE0LWEyMzgtODMwNDcwZDRkMzUyNjM4ODU2NDgyMzMxMjEyNjk1"></div>
+
+  <script>
+    // JSONのURL
+    const productsJsonUrl = "https://yoomkatagiri.github.io/snipcart-test/products.json";
+
+    // 商品を読み込んでボタンを作る
+    fetch(productsJsonUrl)
+      .then(response => response.json())
+      .then(products => {
+        const container = document.getElementById("products-container");
+        products.forEach(product => {
+          const btn = document.createElement("button");
+          btn.className = "snipcart-add-item";
+          btn.setAttribute("data-item-id", product.id);
+          btn.setAttribute("data-item-name", product.name);
+          btn.setAttribute("data-item-price", product.price);
+          btn.setAttribute("data-item-url", productsJsonUrl); // JSONを参照
+          btn.setAttribute("data-item-description", product.name + "です");
+          btn.textContent = product.name + " をカートに入れる";
+          container.appendChild(btn);
+          container.appendChild(document.createElement("br"));
+        });
+      })
+      .catch(err => {
+        console.error("商品読み込みエラー:", err);
+      });
+  </script>
 </body>
 </html>
